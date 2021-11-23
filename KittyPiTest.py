@@ -1,4 +1,5 @@
 import KittyPi
+import RPi.GPIO as GPIO
 from chip_systems import ProjectSystem
 import time
 from datetime import datetime
@@ -72,6 +73,7 @@ print('test1')
 
 while True:
 	print('%.2f, %.2f, %.2f, %.2f, %.2f, %.2f, %.2f' %  kittypi.imu.ReadAllSensors())
+	print('Distance = %.1fcm' % kittypi.ReadDistance(averages=5))
 	time.sleep(0.5)
 
 print('test2')
