@@ -1,0 +1,3 @@
+[submodule "chip_systems"]
+	path = chip_systems
+	url = https://github.com/dniamir/chip_systems
